@@ -1,0 +1,10 @@
+
+
+<h1><%= @article.title %></h1>
+<h1><%= @article.content %></h1>
+
+<form action="/articles/#{@article.id}" method="POST">
+  Title: <input type="text" name="title">
+  Content: <input type="text" name="content">
+  <button type="submit">Create New Article</button>
+</form>
